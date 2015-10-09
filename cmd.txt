@@ -1,1 +1,2 @@
-sudo docker run --privileged -p=9955:9955/udp -p=9955:9955/tcp -p=9956:9956/udp -p=8022:22 -p=5353:5353/udp
+sudo docker pull bmorin/alljoyn-gwagent-sample
+docker run -p 9955-9956:9955-9956/tcp -p 9955-9956:9955-9956/udp -p 5353:5353/udp -it --rm --net=host bmorin/alljoyn-gwagent-sample
